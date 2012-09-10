@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "UMMasterViewController.h"
 
-@interface TestMasterViewController : UMMasterViewController <UMMasterViewControllerProtocol>
+@interface TestMasterViewController : UMMasterViewController <UMMasterViewControllerProtocol, UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end
