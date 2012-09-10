@@ -13,6 +13,11 @@
 		502C068015FDF63A002D3C1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 502C067E15FDF63A002D3C1F /* InfoPlist.strings */; };
 		502C068215FDF63A002D3C1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C068115FDF63A002D3C1F /* main.m */; };
 		502C068615FDF63A002D3C1F /* UMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C068515FDF63A002D3C1F /* UMAppDelegate.m */; };
+		502C069915FDF64B002D3C1F /* UMDetailNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C068F15FDF64B002D3C1F /* UMDetailNavigationController.m */; };
+		502C069A15FDF64B002D3C1F /* UMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069215FDF64B002D3C1F /* UMDetailViewController.m */; };
+		502C069B15FDF64B002D3C1F /* UMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069515FDF64B002D3C1F /* UMMasterViewController.m */; };
+		502C069C15FDF64B002D3C1F /* UMSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069815FDF64B002D3C1F /* UMSplitViewController.m */; };
+		502C06A015FDF6C4002D3C1F /* UINavigationController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069F15FDF6C4002D3C1F /* UINavigationController+Transition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,22 @@
 		502C067515FDF63A002D3C1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		502C067715FDF63A002D3C1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		502C067915FDF63A002D3C1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		502C067D15FDF63A002D3C1F /* SplitViewTest-Info.plist */ = {isa = PBXFileReference; path = "SplitViewTest-Info.plist"; sourceTree = "<group>"; };
+		502C067D15FDF63A002D3C1F /* SplitViewTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplitViewTest-Info.plist"; sourceTree = "<group>"; };
 		502C067F15FDF63A002D3C1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		502C068115FDF63A002D3C1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		502C068315FDF63A002D3C1F /* SplitViewTest-Prefix.pch */ = {isa = PBXFileReference; path = "SplitViewTest-Prefix.pch"; sourceTree = "<group>"; };
-		502C068415FDF63A002D3C1F /* UMAppDelegate.h */ = {isa = PBXFileReference; path = UMAppDelegate.h; sourceTree = "<group>"; };
+		502C068315FDF63A002D3C1F /* SplitViewTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplitViewTest-Prefix.pch"; sourceTree = "<group>"; };
+		502C068415FDF63A002D3C1F /* UMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMAppDelegate.h; sourceTree = "<group>"; };
 		502C068515FDF63A002D3C1F /* UMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMAppDelegate.m; sourceTree = "<group>"; };
+		502C068E15FDF64B002D3C1F /* UMDetailNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMDetailNavigationController.h; sourceTree = "<group>"; };
+		502C068F15FDF64B002D3C1F /* UMDetailNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMDetailNavigationController.m; sourceTree = "<group>"; };
+		502C069115FDF64B002D3C1F /* UMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMDetailViewController.h; sourceTree = "<group>"; };
+		502C069215FDF64B002D3C1F /* UMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMDetailViewController.m; sourceTree = "<group>"; };
+		502C069415FDF64B002D3C1F /* UMMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMasterViewController.h; sourceTree = "<group>"; };
+		502C069515FDF64B002D3C1F /* UMMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMasterViewController.m; sourceTree = "<group>"; };
+		502C069715FDF64B002D3C1F /* UMSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSplitViewController.h; sourceTree = "<group>"; };
+		502C069815FDF64B002D3C1F /* UMSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMSplitViewController.m; sourceTree = "<group>"; };
+		502C069E15FDF6C4002D3C1F /* UINavigationController+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transition.h"; sourceTree = "<group>"; };
+		502C069F15FDF6C4002D3C1F /* UINavigationController+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +87,7 @@
 		502C067B15FDF63A002D3C1F /* SplitViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				502C068C15FDF64B002D3C1F /* UMSplit View Controller */,
 				502C068415FDF63A002D3C1F /* UMAppDelegate.h */,
 				502C068515FDF63A002D3C1F /* UMAppDelegate.m */,
 				502C067C15FDF63A002D3C1F /* Supporting Files */,
@@ -88,6 +104,63 @@
 				502C068315FDF63A002D3C1F /* SplitViewTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		502C068C15FDF64B002D3C1F /* UMSplit View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				502C069D15FDF6C4002D3C1F /* UINavigationController + Transition */,
+				502C068D15FDF64B002D3C1F /* Detail Navigation Controller */,
+				502C069015FDF64B002D3C1F /* Detail View Controller */,
+				502C069315FDF64B002D3C1F /* Master View Controller */,
+				502C069615FDF64B002D3C1F /* Split View Controller */,
+			);
+			path = "UMSplit View Controller";
+			sourceTree = "<group>";
+		};
+		502C068D15FDF64B002D3C1F /* Detail Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				502C068E15FDF64B002D3C1F /* UMDetailNavigationController.h */,
+				502C068F15FDF64B002D3C1F /* UMDetailNavigationController.m */,
+			);
+			path = "Detail Navigation Controller";
+			sourceTree = "<group>";
+		};
+		502C069015FDF64B002D3C1F /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				502C069115FDF64B002D3C1F /* UMDetailViewController.h */,
+				502C069215FDF64B002D3C1F /* UMDetailViewController.m */,
+			);
+			path = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		502C069315FDF64B002D3C1F /* Master View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				502C069415FDF64B002D3C1F /* UMMasterViewController.h */,
+				502C069515FDF64B002D3C1F /* UMMasterViewController.m */,
+			);
+			path = "Master View Controller";
+			sourceTree = "<group>";
+		};
+		502C069615FDF64B002D3C1F /* Split View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				502C069715FDF64B002D3C1F /* UMSplitViewController.h */,
+				502C069815FDF64B002D3C1F /* UMSplitViewController.m */,
+			);
+			path = "Split View Controller";
+			sourceTree = "<group>";
+		};
+		502C069D15FDF6C4002D3C1F /* UINavigationController + Transition */ = {
+			isa = PBXGroup;
+			children = (
+				502C069E15FDF6C4002D3C1F /* UINavigationController+Transition.h */,
+				502C069F15FDF6C4002D3C1F /* UINavigationController+Transition.m */,
+			);
+			path = "UINavigationController + Transition";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +226,11 @@
 			files = (
 				502C068215FDF63A002D3C1F /* main.m in Sources */,
 				502C068615FDF63A002D3C1F /* UMAppDelegate.m in Sources */,
+				502C069915FDF64B002D3C1F /* UMDetailNavigationController.m in Sources */,
+				502C069A15FDF64B002D3C1F /* UMDetailViewController.m in Sources */,
+				502C069B15FDF64B002D3C1F /* UMMasterViewController.m in Sources */,
+				502C069C15FDF64B002D3C1F /* UMSplitViewController.m in Sources */,
+				502C06A015FDF6C4002D3C1F /* UINavigationController+Transition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
