@@ -7,6 +7,14 @@
 //
 
 #import "UMAppDelegate.h"
+#import "UMSplitViewController.h"
+#import "TestMasterViewController.h"
+
+@interface UMAppDelegate ()
+
+- (void)setupSplitViewController;
+
+@end
 
 @implementation UMAppDelegate
 
@@ -22,6 +30,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    [self setupSplitViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -64,6 +73,21 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+#pragma mark - Split View Controller
+
+- (void)setupSplitViewController
+{
+    UMSplitViewController *_splitViewController = [[UMSplitViewController alloc] init];
+    TestMasterViewController *_testMasterViewController = [[TestMasterViewController alloc] init];
+    _testMasterViewController.delegate = _splitViewController;
+    
+    _splitViewController.masterViewController = _testMasterViewController;
+    [_testMasterViewController release], _testMasterViewController = nil;
+    
+    self.window.rootViewController = _splitViewController;
+    [_splitViewController release], _splitViewController = nil;
 }
 
 @end

@@ -15,14 +15,16 @@
 @synthesize delegate = _delegate;
 @synthesize defaultSelectedIndex ;
 
--(void)selectViewControllerAtIndex:(int)idx{
-    if(idx < self.viewControllers.count){
-        self.selectedViewController = [self.viewControllers objectAtIndex:idx];
+- (void)selectViewControllerAtIndex:(NSInteger)index
+{
+    if(index < self.viewControllers.count){
+        self.selectedViewController = [self.viewControllers objectAtIndex:index];
     }
 }
 
--(id)init{
-    if(self = [super init]){
+-(id)init
+{
+    if (self = [super init]) {
         self.defaultSelectedIndex = 0;
     }
     

@@ -129,7 +129,7 @@
 
 - (void)masterViewControllerResetButtonClicked:(UMMasterViewController *)masterViewController
 {
-    
+    //reset code goes here
 }
 
 - (void)masterViewControllerBackButtonClicked:(UMMasterViewController *)masterViewController

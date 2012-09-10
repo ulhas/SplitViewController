@@ -45,7 +45,7 @@
 @property (nonatomic, retain) UMDetailViewController *selectedViewController;
 
 @property (nonatomic, assign) id <UMMasterViewControllerDelegate, UMDetailNavigationControllerDelegate> delegate;
--(void)selectViewControllerAtIndex:(int)idx;
+- (void)selectViewControllerAtIndex:(NSInteger)index;
 @property (nonatomic, assign) int defaultSelectedIndex;
 
 @end

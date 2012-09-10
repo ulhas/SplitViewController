@@ -18,6 +18,8 @@
 		502C069B15FDF64B002D3C1F /* UMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069515FDF64B002D3C1F /* UMMasterViewController.m */; };
 		502C069C15FDF64B002D3C1F /* UMSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069815FDF64B002D3C1F /* UMSplitViewController.m */; };
 		502C06A015FDF6C4002D3C1F /* UINavigationController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C069F15FDF6C4002D3C1F /* UINavigationController+Transition.m */; };
+		507EA30615FE0BA7000A4973 /* TestMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507EA30415FE0BA7000A4973 /* TestMasterViewController.m */; };
+		507EA30715FE0BA7000A4973 /* TestMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507EA30515FE0BA7000A4973 /* TestMasterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,9 @@
 		502C069815FDF64B002D3C1F /* UMSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMSplitViewController.m; sourceTree = "<group>"; };
 		502C069E15FDF6C4002D3C1F /* UINavigationController+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transition.h"; sourceTree = "<group>"; };
 		502C069F15FDF6C4002D3C1F /* UINavigationController+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transition.m"; sourceTree = "<group>"; };
+		507EA30315FE0BA6000A4973 /* TestMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestMasterViewController.h; path = "SplitViewTest/Test/Test Master View Controller/TestMasterViewController.h"; sourceTree = SOURCE_ROOT; };
+		507EA30415FE0BA7000A4973 /* TestMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestMasterViewController.m; path = "SplitViewTest/Test/Test Master View Controller/TestMasterViewController.m"; sourceTree = SOURCE_ROOT; };
+		507EA30515FE0BA7000A4973 /* TestMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestMasterViewController.xib; path = "SplitViewTest/Test/Test Master View Controller/TestMasterViewController.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,7 @@
 				502C069015FDF64B002D3C1F /* Detail View Controller */,
 				502C069315FDF64B002D3C1F /* Master View Controller */,
 				502C069615FDF64B002D3C1F /* Split View Controller */,
+				507EA30915FE0BAE000A4973 /* Test Master View Controller */,
 			);
 			path = "UMSplit View Controller";
 			sourceTree = "<group>";
@@ -161,6 +167,16 @@
 				502C069F15FDF6C4002D3C1F /* UINavigationController+Transition.m */,
 			);
 			path = "UINavigationController + Transition";
+			sourceTree = "<group>";
+		};
+		507EA30915FE0BAE000A4973 /* Test Master View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				507EA30315FE0BA6000A4973 /* TestMasterViewController.h */,
+				507EA30415FE0BA7000A4973 /* TestMasterViewController.m */,
+				507EA30515FE0BA7000A4973 /* TestMasterViewController.xib */,
+			);
+			name = "Test Master View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				502C068015FDF63A002D3C1F /* InfoPlist.strings in Resources */,
+				507EA30715FE0BA7000A4973 /* TestMasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +248,7 @@
 				502C069B15FDF64B002D3C1F /* UMMasterViewController.m in Sources */,
 				502C069C15FDF64B002D3C1F /* UMSplitViewController.m in Sources */,
 				502C06A015FDF6C4002D3C1F /* UINavigationController+Transition.m in Sources */,
+				507EA30615FE0BA7000A4973 /* TestMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +352,7 @@
 				502C068B15FDF63A002D3C1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
