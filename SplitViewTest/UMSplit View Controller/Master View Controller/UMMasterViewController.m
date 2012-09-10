@@ -13,7 +13,6 @@
 @synthesize viewControllers = _viewControllers;
 @synthesize selectedViewController = _selectedViewController;
 @synthesize delegate = _delegate;
-@synthesize defaultSelectedIndex ;
 
 - (void)selectViewControllerAtIndex:(NSInteger)index
 {
@@ -24,8 +23,9 @@
 
 -(id)init
 {
-    if (self = [super init]) {
-        self.defaultSelectedIndex = 0;
+    self = [super init];
+    if (self) {
+        //initialisation code
     }
     
     return self;
@@ -40,7 +40,6 @@
 
 #pragma mark - View lifecycle
 
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -48,6 +47,17 @@
         return YES;
     
 	return NO;
+}
+
+#pragma mark - Getters
+
+- (NSMutableArray *)viewControllers
+{
+    if (!_viewControllers) {
+        _viewControllers = [[NSMutableArray alloc] init];
+    }
+    
+    return _viewControllers;
 }
 
 @end

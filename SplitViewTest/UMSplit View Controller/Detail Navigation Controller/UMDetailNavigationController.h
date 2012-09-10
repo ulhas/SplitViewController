@@ -17,5 +17,6 @@
 @interface UMDetailNavigationController : UINavigationController
 
 @property (nonatomic, assign) id <UMDetailNavigationControllerDelegate> detailViewControllerDelegate;
+@property (nonatomic, readonly) UMDetailViewController *detailRootController;
 
 @end

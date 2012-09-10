@@ -74,4 +74,15 @@
 	return NO;
 }
 
+- (UMDetailViewController *)detailRootController
+{
+    @try {
+        return (UMDetailViewController *)[self.viewControllers objectAtIndex:ROOT_VIEW_CONTROLLER_INDEX];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"No Root View Controller");
+    }
+    return nil;
+}
+
 @end

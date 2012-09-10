@@ -36,6 +36,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)resetDetailViewController;
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//@Method           : setupInitialSelectedController
+//@Abstract         : setups the initial selected Detail view controller
+//@Param            : NA
+//@Returntype       : void
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)setupInitialSelectedController;
+
 @end
 
 @protocol UMMasterViewControllerDelegate <NSObject>
@@ -54,6 +62,5 @@
 
 @property (nonatomic, assign) id <UMMasterViewControllerDelegate, UMDetailNavigationControllerDelegate> delegate;
 - (void)selectViewControllerAtIndex:(NSInteger)index;
-@property (nonatomic, assign) int defaultSelectedIndex;
 
 @end
